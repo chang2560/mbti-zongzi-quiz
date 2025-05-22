@@ -122,10 +122,10 @@
 
   <script>
     const resultMap = {
-      "ESTJ": "你是\u3010北部粽主管型\u3011：重視規劃與效率，推薦報名《商用英文與簡報技巧班》！",
-      "INFP": "你是\u3010甜粽夢想家\u3011：內心豐富又充滿理想，適合《英文寫作與創意課程》！",
-      "ENFP": "你是\u3010爆漿南部粽\u3011：充滿活力與好奇心，推薦你參加《會話工作坊x國際交流》！",
-      "ISTJ": "你是\u3010傳統鹹粽型\u3011：實事求是、可靠認真，適合《文法與多益實戰班》！"
+      "ESTJ": "你是\u3010北部粽主管型\u3011：重視規劃與效率，推薦報名《商用英文與簡報技巧班》！我們會為你客製推薦課程喔，歡迎私訊諮詢LINE@655qezkq",
+      "INFP": "你是\u3010甜粽夢想家\u3011：內心豐富又充滿理想，適合《英文寫作與創意課程》！我們會為你客製推薦課程喔，歡迎私訊諮詢LINE@655qezkq",
+      "ENFP": "你是\u3010爆漿南部粽\u3011：充滿活力與好奇心，推薦你參加《會話工作坊x國際交流》我們會為你客製推薦課程喔，歡迎私訊諮詢LINE@655qezkq！",
+      "ISTJ": "你是\u3010傳統鹹粽型\u3011：實事求是、可靠認真，適合《文法與多益實戰班》我們會為你客製推薦課程喔，歡迎私訊諮詢LINE@655qezkq！"
     };
 
     document.getElementById("quizForm").addEventListener("submit", function(e) {
@@ -144,7 +144,7 @@
       code += letterCount.T >= letterCount.F ? "T" : "F";
       code += letterCount.J >= letterCount.P ? "J" : "P";
 
-      const resultText = resultMap[code] || `你是\u3010${code} 粽\u3011：我們會為你客製推薦課程喔，歡迎私訊諮詢！`;
+      const resultText = resultMap[code] || `你是\u3010${code} 粽\u3011：我們會為你客製推薦課程喔，歡迎私訊諮詢！LINE@655qezkq`;
       const resultBox = document.getElementById("resultBox");
       resultBox.innerText = resultText;
       resultBox.style.display = "block";
